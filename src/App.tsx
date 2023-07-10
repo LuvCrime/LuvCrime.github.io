@@ -1,30 +1,14 @@
 import { Wrapper } from "./sections"
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { useState, useEffect } from "react";
-import React from "react";
+import { ThemeProvider } from 'styled-components'
+import { useState, useEffect } from "react"
+import React from "react"
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-  }
-`
-const darkTheme = {
-  title: '#fff',
-  bg: '#555050'
-};
-
-const lightTheme = {
-  title: '#1c1c1c',
-  bg: '#F2F2F2'
-}
-
-interface Theme {
-  title: string;
-}
+import { GlobalStyle, lightTheme, darkTheme } from './theme/styles'
 
 export const ThemeContext = React.createContext<{ theme: string; toggleTheme: () => void }>({
   theme: 'light',
-  toggleTheme: () => { },
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  toggleTheme: () => {},
 });
 
 export const App = () => {
@@ -45,7 +29,7 @@ export const App = () => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('theme', currentTheme || 'light');
+    localStorage.setItem('theme', currentTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
   }, [currentTheme]);
 
   const toggleTheme = () => {
