@@ -40,9 +40,9 @@ caret-color: transparent;
 const ToggleSwitch = styled.div`
 caret-color: transparent;
     position: relative;
-    width: 200px;
-    height: 100px;
-    transform: scale(0.3);
+    width: 100px;
+    height: 50px;
+    // transform: scale(0.5);
 `;
 
 const Label = styled.label`
@@ -51,7 +51,7 @@ caret-color: transparent;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: #28292c;
     border-radius: 50px;
     cursor: pointer;
@@ -62,7 +62,7 @@ const Slider = styled.span`
 caret-color: transparent;
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: #28292c;
     border-radius: 50px;
     cursor: pointer;
@@ -71,12 +71,12 @@ caret-color: transparent;
     &::before {
         content: "";
         position: absolute;
-        top: 13px;
-        left: 16px;
-        width: 75px;
-        height: 75px;
+        top: 6.5px;
+        left: 8px;
+        width: 37.5px;
+        height: 37.5px;
         border-radius: 50%;
-        box-shadow: inset 28px -4px 0px 0px #d8dbe0;
+        box-shadow: inset 14px -2px 0px 0px #d8dbe0;
         background-color: #28292c;
         transition: 0.3s;
     }
@@ -85,7 +85,7 @@ caret-color: transparent;
 const Input = styled.input`
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: #28292c;
     border-radius: 50px;
     cursor: pointer;
@@ -94,14 +94,14 @@ const Input = styled.input`
 
     caret-color: transparent;
     
-    transform: scale(0.3);
+    // transform: scale(0.5);
 
     &:checked ~ ${Slider} {
         background-color: #d8dbe0;
     }
 
     &:checked ~ ${Slider}::before {
-        transform: translateX(95px);
+        transform: translateX(47.5px);
         background-color: #28292c;
         box-shadow: none;
     }
