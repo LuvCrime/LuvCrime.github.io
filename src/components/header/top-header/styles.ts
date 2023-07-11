@@ -9,6 +9,13 @@ export const Span = styled.span`
     padding-right: 5px;
 `
 
+export const LanguageContainer = styled.div`
+    width: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 export const TopHeaderBlock = styled.div<{ theme?: Theme }>`
     height: 48px;
     background-color:  ${props => props.theme?.bg};
@@ -17,21 +24,28 @@ export const TopHeaderBlock = styled.div<{ theme?: Theme }>`
     justify-content: end;
 `
 
+export const IconPadding = styled.div`
+    padding-right: 5px
+`
+
 export const ContactInfo = styled.div<{ $width?: string, theme?: Theme }>`
     display: flex;
-    padding-right: 25px;
+    padding: 12px;
+    box-sizing: border-box;
     width: ${props => props.$width || "auto"};
     color: ${props => props.theme?.title};
 `
 
-export const Theme = styled.div<{ $width?: string, theme?: Theme }>`
-caret-color: transparent;
+export const ThemeContainer = styled.div<{ theme?: Theme }>`
+    caret-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 25px;
+    padding: 12px;
+    box-sizing: border-box;
     position: relative;
     height: 100%;
+    width: 150px;
     color: ${props => props.theme?.title};
 `
 
@@ -96,3 +110,39 @@ export const Input = styled.input`
         box-shadow: none;
     }
 `;
+
+//language-selecor
+
+export const SelectContainer = styled.div<{ theme?: Theme }>`
+    background-color:  ${props => props.theme?.bg};
+    color: ${props => props.theme?.title};
+    position: relative;
+    cursor: pointer;
+`
+
+export const SelectButton = styled.button<{ theme?: Theme }>`
+    background-color:  ${props => props.theme?.bg};
+    color: ${props => props.theme?.title};
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+`
+
+export const OptionsList = styled.ul<{ theme?: Theme }>`
+    background-color:  ${props => props.theme?.bg};
+    color: ${props => props.theme?.title};
+    border-radius: 8px;
+    position: absolute;
+    top: 36px;
+    left: -9px;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+`
+
+export const OptionItem = styled.li`
+    padding: 0.5em 1em;
+    cursor: pointer;
+`

@@ -2,17 +2,17 @@ import { Wrapper } from "./sections"
 import { ThemeProvider } from 'styled-components'
 import { useState, useEffect } from "react"
 import React from "react"
-
 import { GlobalStyle, lightTheme, darkTheme } from './theme/styles'
 
 export const ThemeContext = React.createContext<{ theme: string; toggleTheme: () => void }>({
-  theme: 'light',
+  theme: '',
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  toggleTheme: () => {},
+  toggleTheme: () => { },
 });
 
 export const App = () => {
-  const [currentTheme, setCurrentTheme] = useState<string | null>(localStorage.getItem('theme'));
+  const browserTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const [currentTheme, setCurrentTheme] = useState<string>(localStorage.getItem('theme') || browserTheme);
 
   useEffect(() => {
     const handleStorageChange = (event: StorageEvent) => {
@@ -29,13 +29,13 @@ export const App = () => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('theme', currentTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-  }, [currentTheme]);
+    localStorage.setItem('theme', currentTheme || browserTheme);
+  }, [browserTheme, currentTheme]);
 
   const toggleTheme = () => {
     setCurrentTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
-
+  console.log(currentTheme, 'currentTheme')
   return (
     <ThemeProvider theme={currentTheme === 'dark' ? darkTheme : lightTheme}>
       <GlobalStyle />
