@@ -1,5 +1,17 @@
 {
-    "kek": "kek po rus",
     "request-call": "Заказать звонок",
-    "theme": "Тема:"
+    "theme": "Тема:",
+    "about-company": "О компании",
+    "services": "Услуги",
+    "education": "Обучение",
+    "outstaffing": "Аутстаффинг",
+    "contacts": "Контакты",
+    "development": "Разработка сайтов любых типов",
+    "online-store": "Интернет-магазин",
+    "corporate-website": "Корпоративный сайт",
+    "business-card-site": "Сайт-визитка",
+    "service-portal": "Сервис/портал",
+    "branding": "брендинг, продвижение,",
+    "mobile-development": "разработка мобильных приложений,",
+    "courses": "собственный курс обучения"
 }

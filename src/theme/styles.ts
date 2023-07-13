@@ -9,11 +9,11 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const darkTheme = {
-    title: '#fff',
+    text: '#fff',
     bg: '#555050'
 };
 
 export const lightTheme = {
-    title: '#1c1c1c',
+    text: '#1c1c1c',
     bg: '#F2F2F2'
 }

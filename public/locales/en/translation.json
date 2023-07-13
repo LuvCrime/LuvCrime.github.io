@@ -1,5 +1,17 @@
 {
-    "kek": "kek po eng",
     "request-call": "Request a call",
-    "theme": "Theme:"
+    "theme": "Theme:",
+    "about-company": "About",
+    "services": "Services",
+    "education": "Education",
+    "outstaffing": "Outstaffing",
+    "contacts": "Contacts",
+    "development": "Development of sites of any type",
+    "online-store": "Online store",
+    "corporate-website": "Corporate website",
+    "business-card-site": "Business card site",
+    "service-portal": "Service/portal",
+    "branding": "branding, promotion,",
+    "mobile-development": "development of mobile applications,",
+    "courses": "own training course"
 }

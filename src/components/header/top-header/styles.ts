@@ -1,39 +1,43 @@
 import styled from 'styled-components'
 
 interface Theme {
-    title?: string;
+    text?: string;
     bg?: string;
 }
 
 export const Span = styled.span`
-    padding-right: 5px;
+    padding-right: 7px;
+    cursor: default;
 `
 
 export const LanguageContainer = styled.div`
-    width: 66px;
     display: flex;
     align-items: center;
     justify-content: center;
 `
 
-export const TopHeaderBlock = styled.div<{ theme?: Theme }>`
+export const TopHeaderContainer = styled.div<{ theme?: Theme }>`
     height: 48px;
     background-color:  ${props => props.theme?.bg};
     display: flex;
     align-items: center;
     justify-content: end;
+    padding: 12px 80px;
+    > div:not(:last-child) {
+        padding-right: 24px;
+    }
 `
 
 export const IconPadding = styled.div`
     padding-right: 5px
 `
 
-export const ContactInfo = styled.div<{ $width?: string, theme?: Theme }>`
+export const ContactInfoContainer = styled.div<{ theme?: Theme }>`
     display: flex;
-    padding: 12px;
+    // padding: 12px;
     box-sizing: border-box;
-    width: ${props => props.$width || "auto"};
-    color: ${props => props.theme?.title};
+    color: ${props => props.theme?.text};
+    caret-color: transparent;
 `
 
 export const ThemeContainer = styled.div<{ theme?: Theme }>`
@@ -41,12 +45,12 @@ export const ThemeContainer = styled.div<{ theme?: Theme }>`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    // padding: 12px;
     box-sizing: border-box;
     position: relative;
     height: 100%;
-    width: 150px;
-    color: ${props => props.theme?.title};
+    // width: 150px;
+    color: ${props => props.theme?.text};
 `
 
 export const ToggleSwitch = styled.div`
@@ -115,14 +119,15 @@ export const Input = styled.input`
 
 export const SelectContainer = styled.div<{ theme?: Theme }>`
     background-color:  ${props => props.theme?.bg};
-    color: ${props => props.theme?.title};
+    color: ${props => props.theme?.text};
     position: relative;
     cursor: pointer;
+    caret-color: transparent;
 `
 
 export const SelectButton = styled.button<{ theme?: Theme }>`
     background-color:  ${props => props.theme?.bg};
-    color: ${props => props.theme?.title};
+    color: ${props => props.theme?.text};
     border: none;
     cursor: pointer;
     font-family: Montserrat;
@@ -131,7 +136,7 @@ export const SelectButton = styled.button<{ theme?: Theme }>`
 
 export const OptionsList = styled.ul<{ theme?: Theme }>`
     background-color:  ${props => props.theme?.bg};
-    color: ${props => props.theme?.title};
+    color: ${props => props.theme?.text};
     border-radius: 8px;
     position: absolute;
     top: 36px;

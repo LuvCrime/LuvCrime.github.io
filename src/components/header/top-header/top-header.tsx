@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import { LanguageSelector } from './language-selector';
 import { ThemeSwitcher } from './theme-switcher';
 
-import { Span, TopHeaderBlock, ContactInfo, ThemeContainer, IconPadding, LanguageContainer } from './styles';
+import { Span, TopHeaderContainer, ContactInfoContainer, ThemeContainer, IconPadding, LanguageContainer } from './styles';
 
 import { EMAIL, NUMBER } from '../../../utils/constants';
 
@@ -11,14 +11,14 @@ export const TopHeader = () => {
     const { t } = useTranslation();
 
     return (
-        <TopHeaderBlock>
-            <ContactInfo>{EMAIL}</ContactInfo>
-            <ContactInfo>{NUMBER}</ContactInfo>
-            <ContactInfo>
+        <TopHeaderContainer>
+            <ContactInfoContainer>{EMAIL}</ContactInfoContainer>
+            <ContactInfoContainer>{NUMBER}</ContactInfoContainer>
+            <ContactInfoContainer>
                 <SkypeSVG />
                 <IconPadding />
                 <WhatsAppSVG />
-            </ContactInfo>
+            </ContactInfoContainer>
             <LanguageContainer>
                 <LanguageSelector />
             </LanguageContainer>
@@ -28,7 +28,7 @@ export const TopHeader = () => {
                 </Span>
                 <ThemeSwitcher />
             </ThemeContainer>
-            <ContactInfo $width="221px">{t('request-call').toUpperCase()}</ContactInfo>
-        </TopHeaderBlock>
+            <ContactInfoContainer>{t('request-call').toUpperCase()}</ContactInfoContainer>
+        </TopHeaderContainer>
     )
 }

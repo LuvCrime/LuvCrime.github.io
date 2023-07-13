@@ -1,5 +1,17 @@
 {
-    "kek": "kek po est",
     "request-call": "Taotlege helistamist",
-    "theme": "Teema:"
+    "theme": "Teema:",
+    "about-company": "Ettevõtte kohta",
+    "services": "Teenuseid",
+    "education": "Haridus",
+    "outstaffing": "Personali puudumine",
+    "contacts": "Kontaktid",
+    "development": "Igat tüüpi saitide arendamine",
+    "online-store": "Online pood",
+    "corporate-website": "Ettevõtte veebisait",
+    "business-card-site": "Visiitkaartide sait",
+    "service-portal": "Teenus/portaal",
+    "branding": "bränding, reklaamimine,",
+    "mobile-development": "mobiilirakenduste arendus,",
+    "courses": "enda õppesuund"
 }
