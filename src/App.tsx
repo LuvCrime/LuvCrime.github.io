@@ -35,7 +35,7 @@ export const App = () => {
   const toggleTheme = () => {
     setCurrentTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
-  console.log(currentTheme, 'currentTheme')
+  
   return (
     <ThemeProvider theme={currentTheme === 'dark' ? darkTheme : lightTheme}>
       <GlobalStyle />

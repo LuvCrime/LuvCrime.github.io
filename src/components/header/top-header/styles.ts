@@ -1,9 +1,5 @@
 import styled from 'styled-components'
-
-interface Theme {
-    text?: string;
-    bg?: string;
-}
+import { Theme } from 'theme'
 
 export const Span = styled.span`
     padding-right: 7px;
@@ -18,7 +14,7 @@ export const LanguageContainer = styled.div`
 
 export const TopHeaderContainer = styled.div<{ theme?: Theme }>`
     height: 48px;
-    background-color:  ${props => props.theme?.bg};
+    background-color:  ${props => props.theme?.bg1};
     display: flex;
     align-items: center;
     justify-content: end;
@@ -34,7 +30,6 @@ export const IconPadding = styled.div`
 
 export const ContactInfoContainer = styled.div<{ theme?: Theme }>`
     display: flex;
-    // padding: 12px;
     box-sizing: border-box;
     color: ${props => props.theme?.text};
     caret-color: transparent;
@@ -45,11 +40,9 @@ export const ThemeContainer = styled.div<{ theme?: Theme }>`
     display: flex;
     align-items: center;
     justify-content: center;
-    // padding: 12px;
     box-sizing: border-box;
     position: relative;
     height: 100%;
-    // width: 150px;
     color: ${props => props.theme?.text};
 `
 
@@ -118,7 +111,7 @@ export const Input = styled.input`
 //language-selecor
 
 export const SelectContainer = styled.div<{ theme?: Theme }>`
-    background-color:  ${props => props.theme?.bg};
+    background-color:  ${props => props.theme?.bg1};
     color: ${props => props.theme?.text};
     position: relative;
     cursor: pointer;
@@ -126,7 +119,7 @@ export const SelectContainer = styled.div<{ theme?: Theme }>`
 `
 
 export const SelectButton = styled.button<{ theme?: Theme }>`
-    background-color:  ${props => props.theme?.bg};
+    background-color:  ${props => props.theme?.bg1};
     color: ${props => props.theme?.text};
     border: none;
     cursor: pointer;
@@ -135,7 +128,7 @@ export const SelectButton = styled.button<{ theme?: Theme }>`
 `
 
 export const OptionsList = styled.ul<{ theme?: Theme }>`
-    background-color:  ${props => props.theme?.bg};
+    background-color:  ${props => props.theme?.bg1};
     color: ${props => props.theme?.text};
     border-radius: 8px;
     position: absolute;

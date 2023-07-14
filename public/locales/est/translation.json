@@ -13,5 +13,12 @@
     "service-portal": "Teenus/portaal",
     "branding": "bränding, reklaamimine,",
     "mobile-development": "mobiilirakenduste arendus,",
-    "courses": "enda õppesuund"
+    "courses": "enda õppesuund",
+    "offer": "mida me saame pakkuda",
+    "sites-creating": "Saitide ja portaalide loomine",
+    "outstaffing-IT": "IT-spetsialistide koondamine",
+    "training-IT": "IT-spetsialistide koolitus",
+    "licenses": "Litsentside müük",
+    "server-equipment": "Kontori- ja serveritehnika müük",
+    "privacy-policy": "Privaatsuspoliitika"
 }

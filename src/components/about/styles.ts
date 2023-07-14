@@ -1,14 +1,10 @@
 import { styled } from "styled-components"
-
-interface Theme {
-    text?: string;
-    bg?: string;
-}
+import { Theme } from 'theme'
 
 export const AboutContainer = styled.div<{ theme?: Theme }>`
+    background-color:  ${props => props.theme?.bg1};
     padding: 109px 145px 85px 175px;
     box-sizing: border-box;
-    background-color:  ${props => props.theme?.bg};
     display: flex;
     justify-content: space-between;
 `
@@ -18,17 +14,15 @@ export const LogoContainer = styled.div<{ theme?: Theme }>`
     position: relative;
 `
 
-export const Rectangle = styled.div`
-    background-color: #E9E9E9;
+export const Rectangle = styled.div<{ theme?: Theme }>`
+    background-color:  ${props => props.theme?.bg2};
     width: 319.612px;
     height: 319.612px;
     transform: rotate(45deg);
     position: absolute;
 `
 
-export const TextContainer = styled.div<{ theme?: Theme }>`
- 
-`
+export const TextContainer = styled.div<{ theme?: Theme }>``
 
 export const Title = styled.h2<{ theme?: Theme }>`
     color: ${props => props.theme?.text};
@@ -63,11 +57,12 @@ export const LiPlus = styled.li<{ theme?: Theme }>`
     line-height: normal;
 `
 
-export const AdditionallyContainer = styled.div<{ theme?: Theme }>`
+export const AdditionallyContainer = styled.div`
     display: flex;
 `
 
 export const Plus = styled.div<{ theme?: Theme }>`
+    color: ${props => props.theme?.text};
     display: flex;
     padding-right: 5px;
 `

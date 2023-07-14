@@ -1,11 +1,11 @@
-import { SkypeSVG, WhatsAppSVG } from './icons';
+import { SkypeSVG, WhatsAppSVG } from 'icons';
 import { useTranslation } from "react-i18next"
 import { LanguageSelector } from './language-selector';
 import { ThemeSwitcher } from './theme-switcher';
 
 import { Span, TopHeaderContainer, ContactInfoContainer, ThemeContainer, IconPadding, LanguageContainer } from './styles';
 
-import { EMAIL, NUMBER } from '../../../utils/constants';
+import { EMAIL, NUMBER } from 'utils/constants';
 
 export const TopHeader = () => {
     const { t } = useTranslation();

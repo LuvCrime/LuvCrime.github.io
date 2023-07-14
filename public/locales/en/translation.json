@@ -13,5 +13,12 @@
     "service-portal": "Service/portal",
     "branding": "branding, promotion,",
     "mobile-development": "development of mobile applications,",
-    "courses": "own training course"
+    "courses": "own training course",
+    "offer": "what can we offer",
+    "sites-creating": "Creation of sites and portals",
+    "outstaffing-IT": "Outstaffing of IT specialists",
+    "training-IT": "Training of IT specialists",
+    "licenses": "Sale of licenses",
+    "server-equipment": "Sale of office and server equipment",
+    "privacy-policy": "Privacy Policy"
 }

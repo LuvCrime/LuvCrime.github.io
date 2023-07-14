@@ -10,10 +10,14 @@ export const GlobalStyle = createGlobalStyle`
 
 export const darkTheme = {
     text: '#fff',
-    bg: '#555050'
+    bg1: '#0d1117',
+    bg2: '#141a22f5',
+    bgFooter: '#0d1117',
 };
 
 export const lightTheme = {
     text: '#1c1c1c',
-    bg: '#F2F2F2'
+    bg1: '#F2F2F2',
+    bg2: '#FFFFFF',
+    bgFooter: '#001B34',
 }
