@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Theme } from 'theme'
+import { Link as MUILink } from '@mui/material';
 
 export const CalculatorContainer = styled.div<{ theme?: Theme }>`
     background-color:  ${props => props.theme?.bg1};
@@ -22,3 +23,17 @@ export const Subtitle = styled.div<{ theme?: Theme }>`
     color: ${props => props.theme?.text};
 `
 
+export const LinkStyled = styled(MUILink)<{ theme?: Theme }>`
+    color: ${props => props.theme?.text} !important;
+    font-family: Montserrat !important;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: normal;
+    box-sizing: border-box;
+`;
+
+export const StyledCalculator = styled.div`
+    display: flex;
+    margin-top: 64px;
+`

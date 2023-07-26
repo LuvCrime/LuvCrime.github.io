@@ -24,5 +24,16 @@
     "provide-employees": "pakume töötajaid teile vajalike ülesannete täitmiseks",
     "calculator": "Kalkulaator",
     "order": "vali, mida vajad, ja esita tellimus",
-    "web": "Veebiarendaja"
+    "web": "Veebiarendaja",
+    "ios": "iOS-i arendaja",
+    "android": "androidi arendaja",
+    "back": "Taustaprogrammi arendaja",
+    "fullstack": "Täispinu arendaja",
+    "designer": "UX/UI disainer",
+    "tester": "Tester",
+    "analyst": "Analüütik",
+    "product": "Tootejuht",
+    "note": "Märge",
+    "order-button": "tellida",
+    "application": "Rakendus"
 }

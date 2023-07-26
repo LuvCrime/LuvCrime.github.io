@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { Theme } from 'theme'
 
+import { Button as MUIButton} from '@mui/material';
+
 export const Span = styled.span`
     padding-right: 7px;
     cursor: default;
@@ -143,4 +145,15 @@ export const OptionsList = styled.ul<{ theme?: Theme }>`
 export const OptionItem = styled.li`
     padding: 0.5em 1em;
     cursor: pointer;
+`
+
+export const Button = styled(MUIButton)`
+    color: #FF4D4D;
+    font-family: Montserrat !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 800 !important;
+    line-height: normal;
+    box-sizing: border-box;
+    margin-right: -10px !important;
 `

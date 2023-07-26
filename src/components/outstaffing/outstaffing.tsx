@@ -7,9 +7,21 @@ import {
     SwitchContainer,
     Ul,
     Li,
+    NoteContainer,
+    Note,
+    Textarea,
+    ButtonContainer
 } from "./styles"
 
+import { useState, ChangeEvent } from 'react'
+
 import { IOSSwitch } from '../switch/switch';
+
+import { Button } from '../button/button';
+
+interface CheckedItems {
+    [key: string]: boolean;
+}
 
 const outstaffingList = [
     'web',
@@ -26,6 +38,20 @@ const outstaffingList = [
 export const Outstaffing = () => {
     const { t } = useTranslation();
 
+    const [checkedItems, setCheckedItems] = useState<CheckedItems>(
+        outstaffingList.reduce((acc, item) => {
+            acc[item] = false;
+            return acc;
+        }, {})
+    );
+
+    const handleChange = (item: string) => (event: ChangeEvent<HTMLInputElement>) => {
+        setCheckedItems({
+            ...checkedItems,
+            [item]: event.target.checked,
+        });
+    };
+
     return (
         <OutstaffingContainer>
             <Title>{t('outstaffing')}</Title>
@@ -33,15 +59,27 @@ export const Outstaffing = () => {
             <Img />
             <SwitchContainer>
                 <Ul>
-                    {outstaffingList.map(item => (
-                        <Li>
-                        {t(item)}
-                        <IOSSwitch sx={{ m: 1 }} defaultChecked />
-                    </Li>
+                    {outstaffingList.map((item, index) => (
+                        <Li key={index}>
+                            <div>{t(item)}</div>
+                            <div>
+                                <IOSSwitch
+                                    sx={{ m: 1 }}
+                                    checked={checkedItems[item]}
+                                    onChange={handleChange(item)}
+                                />
+                            </div>
+                        </Li>
                     ))}
-                    
                 </Ul>
             </SwitchContainer>
+            <NoteContainer>
+                <Note>{t('note')}</Note>
+                <Textarea />
+            </NoteContainer>
+            <ButtonContainer>
+                <Button>{t('order-button')}</Button>
+            </ButtonContainer>
         </OutstaffingContainer>
     )
 }

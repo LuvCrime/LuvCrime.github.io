@@ -24,5 +24,16 @@
     "provide-employees": "we will provide employees with necessary tasks for you",
     "calculator": "Calculator",
     "order": "choose what you need and place an order",
-    "web": "Web developer"
+    "web": "Web developer",
+    "ios": "iOS developer",
+    "android": "Android developer",
+    "back": "Backend developer",
+    "fullstack": "Fullstack developer",
+    "designer": "UX/UI designer",
+    "tester": "Tester",
+    "analyst": "Analyst",
+    "product": "Product Manager",
+    "note": "Note",
+    "order-button": "Order",
+    "application": "Application"
 }
