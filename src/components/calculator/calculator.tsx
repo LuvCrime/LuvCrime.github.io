@@ -1,3 +1,4 @@
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {
     CalculatorContainer,
@@ -17,7 +18,7 @@ import { IOSSwitch } from '../switch/switch';
 
 import { useState } from 'react';
 import { BreadcrumbsCalc } from './breadcrumbs'
-import { ChangeEvent, MouseEvent } from 'react';
+import { ChangeEvent } from 'react';
 
 import { IconButton } from '@mui/material';
 
@@ -79,9 +80,8 @@ export const Calculator = () => {
     ]);
     console.log('prices', prices)
 
-    const handleClick = (event: MouseEvent<HTMLAnchorElement, MouseEvent>, item: string) => {
+    const handleClick = (event: React.MouseEvent, item: string) => {
         event.preventDefault();
-
         setActiveLink(item);
         console.info('You clicked a breadcrumb.', item);
     }
