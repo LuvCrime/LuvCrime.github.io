@@ -35,5 +35,42 @@
     "product": "Product Manager",
     "note": "Note",
     "order-button": "Order",
-    "application": "Application"
+    "application": "Application",
+
+    "business-card-site-description-1": "A business card site (or landing) is a simple small web resource consisting of one or more pages that contain the main information about a company, product, service or person.",
+    "business-card-site-description-2": "What information does an online business card contain",
+    "business-card-site-description-3": "About company. What the company does, its achievements and feedback from real customers.",
+    "business-card-site-description-4": "Services and goods. List and description of goods, packages of services and their cost.",
+    "business-card-site-description-5": "Contact Information. Phones, mail, social networks, work schedule and address.",
+
+    "corporate-website-description-1": "A corporate website is an extensive web resource that represents a company or organization on the Internet and performs not only an informational function, but can also serve as a tool for attracting customers, strengthening the brand and interacting with the audience.",
+    "corporate-website-description-2": "Here are the main elements and information that are often contained on a corporate website:",
+    "corporate-website-description-3": "About company. Brief description of the company, its goals, mission and values.",
+    "corporate-website-description-4": "Products & Services. Detailed description of products and services, benefits, features and specifications.",
+    "corporate-website-description-5": "Clients and partners. List of major clients or partners of the company. Case studies and success stories with real examples if possible.",
+
+    "online-store-description-1": "An online store is an online platform designed to sell goods or services over the Internet. It has certain features to ensure convenient and secure online interaction.",
+    "online-store-description-2": "Here are the main elements and information that are often contained in an online store:",
+    "online-store-description-3": "Catalog of goods or services. Categories and subcategories of products for easy navigation, filters to narrow the search by features, price, brand and other parameters.",
+    "online-store-description-4": "Shopping cart and checkout. The ability to remove and add products to the cart for subsequent checkout.",
+    "online-store-description-5": "Payment methods. List of available payment methods.",
+
+    "service-portal-description-1": "A service or portal is an online platform that provides various services, information or resources to users via the Internet. Such services and portals can be dedicated to different topics and functional purposes.",
+    "service-portal-description-2": "Here are the main elements and information that are often contained on a service or portal:",
+    "service-portal-description-3": "Basic information and purpose. A brief description of the service or portal, its purpose and purpose.",
+    "service-portal-description-4": "Registration and authorization. The ability to register new users with the necessary information, authorization of registered users to access personalized features.",
+    "service-portal-description-5": "Content and functionality. Providing information, content or resources relevant to the subject of the service/portal. Ability to search and filter content for easy navigation. Functional tools or applications that help users solve problems or receive services.",
+
+    "application-description-1": "An application is software designed to be installed and used on mobile devices (smartphones, tablets) or computers. Applications can perform a variety of functions, from entertainment to business-oriented, and provide a convenient way to interact with various services and resources.",
+    "application-description-2": "Here are the main elements and information that are often contained in the application:",
+    "application-description-3": "Main screen and interface. The main screen of the application with the presentation of its functions and capabilities. Simple and intuitive interface for easy interaction with the application.",
+    "application-description-4": "Functionality. Description of the main functions that the application performs. List of features and tools provided to users.",
+    "application-description-5": "Registration and authorization. Ability to create an account and register new users. Authorize registered users to access personalized features.",
+
+    "domen": "Domain / Hosting / E-mail",
+    "word-press": "Ready WordPress Template",
+    "google": "Google Analytics",
+    "support": "Support",
+    "months": "months",
+    "month": "month"
 }
